@@ -1,0 +1,41 @@
+{
+  "name": "context-compaction",
+  "version": "0.1.0",
+  "description": "dsh-style context compaction for LLM agent sessions: threshold-based auto compaction, manual trigger, and handoff summaries via any OpenAI-compatible API.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "llm",
+    "agent",
+    "context-window",
+    "compaction",
+    "compact",
+    "summarization",
+    "openai-compatible"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.5.4",
+    "vitest": "^2.1.9"
+  }
+}
